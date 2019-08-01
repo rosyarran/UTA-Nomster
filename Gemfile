@@ -74,6 +74,9 @@ gem 'will_paginate', '~> 3.1.0'
 # Adds Simple Form
 gem 'simple_form'
 
+# Adds Font Awesome (for icons)
+gem "font-awesome-rails"
+
 source 'https://rails-assets.org' do
   gem 'rails-assets-tether', '>= 1.3.3'
 end
