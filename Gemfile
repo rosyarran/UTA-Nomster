@@ -77,6 +77,9 @@ gem 'simple_form'
 # Adds Font Awesome (for icons)
 gem "font-awesome-rails"
 
+# Adds Devise for usernames and passwords
+gem 'devise'
+
 source 'https://rails-assets.org' do
   gem 'rails-assets-tether', '>= 1.3.3'
 end
