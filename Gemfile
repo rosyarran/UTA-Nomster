@@ -80,6 +80,12 @@ gem "font-awesome-rails"
 # Adds Devise for usernames and passwords
 gem 'devise'
 
+# Add geocoder for maps
+gem 'geocoder'
+
+# Add figaro for keys
+gem 'figaro'
+
 source 'https://rails-assets.org' do
   gem 'rails-assets-tether', '>= 1.3.3'
 end
