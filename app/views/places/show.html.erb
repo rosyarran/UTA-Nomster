@@ -3,7 +3,16 @@
   <i><%= @place.address %></i>
   <br /><br />
   <p><%= @place.description %></p>
-  
+
+  <div class="clear"></div>
+
+  <!-- PHOTOS -->
+  <%= simple_form_for @photo, url: '#' do |f| %>
+    <%= f.input :caption %>
+    <%= f.submit "Add a Caption", class: 'btn btn-primary' %>
+  <% end %>
+
+  <!-- MAP -->
   <% if @place.latitude.present? && @place.longitude.present? %>
     <script>
       function initMap() {
@@ -31,6 +40,7 @@
 
   <br />
 
+  <!-- BUTTONS -->
   <div class="float-right">
     <% if current_user && current_user == @place.user %>
       <%= link_to 'Edit', edit_place_path(@place), class: 'btn btn-outline-info' %>
@@ -40,6 +50,7 @@
 
   <div class="clear"></div>
 
+  <hr>
   <br />
 
   <!-- Modal -->
@@ -66,6 +77,7 @@
     </div>
   </div>
 
+  <!-- COMMENT BUTTON -->
   <div class="col-10 offset-1">
     <h1 class="float-left">Comments</h1>
     <!-- Button trigger modal -->
@@ -76,6 +88,7 @@
 
   <div class="clear"></div>
 
+  <!-- COMMENTS -->
   <div class="row">
     <% @place.comments.each do |comment| %>
       <div class="col-12 col-sm-6">
