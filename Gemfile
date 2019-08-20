@@ -86,6 +86,12 @@ gem 'geocoder'
 # Add figaro for keys
 gem 'figaro'
 
+# Add CarrierWave for picture uploads
+gem 'carrierwave', '~> 1.0'
+
+# Add fog-aws 
+gem 'fog-aws'
+
 source 'https://rails-assets.org' do
   gem 'rails-assets-tether', '>= 1.3.3'
 end
