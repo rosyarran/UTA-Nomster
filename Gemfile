@@ -87,7 +87,7 @@ gem 'geocoder'
 gem 'figaro'
 
 # Add CarrierWave for picture uploads
-gem 'carrierwave', '~> 1.0'
+gem 'carrierwave', '~> 1.3'
 
 # Add fog-aws 
 gem 'fog-aws'
